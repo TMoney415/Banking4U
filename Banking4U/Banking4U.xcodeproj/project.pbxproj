@@ -484,6 +484,7 @@
 				D67E3D3E1CD7DE2C00D16023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67E3D3F1CD7DE2C00D16023 /* Build configuration list for PBXNativeTarget "Banking4UTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				D67E3D411CD7DE2C00D16023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67E3D421CD7DE2C00D16023 /* Build configuration list for PBXNativeTarget "Banking4UUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				D67E3D441CD7DE2C00D16023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
