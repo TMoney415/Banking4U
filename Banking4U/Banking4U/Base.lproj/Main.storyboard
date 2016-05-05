@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="Personal" selectedImage="myImage" id="MlI-y4-od0"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="MlI-y4-od0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR0-AE-iU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +117,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="Home" selectedImage="myImage" id="OUw-a8-0aS"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="OUw-a8-0aS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="Business" selectedImage="myImage" id="dew-y7-ebZ"/>
+                    <tabBarItem key="tabBarItem" selectedImage="Business" systemItem="topRated" id="dew-y7-ebZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAW-gW-2Qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Business" width="128" height="128"/>
         <image name="myImage" width="625" height="680"/>
     </resources>
 </document>
