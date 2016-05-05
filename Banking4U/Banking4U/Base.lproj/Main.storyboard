@@ -5,6 +5,43 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fMp-Ec-5a8">
+            <objects>
+                <tabBarController id="1fI-CN-dFc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sn7-Ho-d5D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ffu-HJ-wVT"/>
+                        <segue destination="zxn-sC-Pft" kind="relationship" relationship="viewControllers" id="BmS-XL-QXI"/>
+                        <segue destination="HWg-l2-WKv" kind="relationship" relationship="viewControllers" id="Eir-1L-sim"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcw-AE-T7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613" y="-114.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0cX-nC-gYq">
+            <objects>
+                <viewController id="HWg-l2-WKv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4T0-1t-WEp"/>
+                        <viewControllerLayoutGuide type="bottom" id="kbN-Pa-6zH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cp5-NL-ZLT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="MlI-y4-od0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hR0-AE-iU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="752.25"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,11 +53,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-Dh-syl">
+                                <rect key="frame" x="188" y="28" width="225" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ll4-Dh-syl" secondAttribute="height" multiplier="292:329" id="YFi-SR-kQC"/>
+                                    <constraint firstAttribute="width" constant="292" id="h4u-bh-vCh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YFi-SR-kQC"/>
+                                        <exclude reference="h4u-bh-vCh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="YFi-SR-kQC"/>
+                                        <include reference="h4u-bh-vCh"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please select the nature of your calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-X2-WIW">
+                                <rect key="frame" x="108" y="420" width="385" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Made by humans for humans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-vy-sU3">
+                                <rect key="frame" x="141" y="201" width="319" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="3Mn-da-u2R"/>
+                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-21.5" id="MSM-OX-665"/>
+                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="ZBp-pL-hDc"/>
+                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8D-02-WeQ"/>
+                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-207.5" id="djU-P8-YcN"/>
+                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="49" id="z41-eZ-E7K"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZBp-pL-hDc"/>
+                                <exclude reference="djU-P8-YcN"/>
+                                <exclude reference="3Mn-da-u2R"/>
+                                <exclude reference="MSM-OX-665"/>
+                                <exclude reference="d8D-02-WeQ"/>
+                                <exclude reference="z41-eZ-E7K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="ZBp-pL-hDc"/>
+                                <include reference="djU-P8-YcN"/>
+                                <include reference="3Mn-da-u2R"/>
+                                <include reference="MSM-OX-665"/>
+                                <include reference="d8D-02-WeQ"/>
+                                <include reference="z41-eZ-E7K"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="OUw-a8-0aS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-613" y="752.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="esS-GZ-LrS">
+            <objects>
+                <viewController id="zxn-sC-Pft" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UsX-3L-eCk"/>
+                        <viewControllerLayoutGuide type="bottom" id="KzC-Fv-wRX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4z8-l9-ng7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" selectedImage="Business" systemItem="topRated" id="dew-y7-ebZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAW-gW-2Qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1505" y="752.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Business" width="128" height="128"/>
+        <image name="myImage" width="625" height="680"/>
+    </resources>
 </document>
