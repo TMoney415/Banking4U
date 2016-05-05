@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1fI-CN-dFc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fMp-Ec-5a8">
+            <objects>
+                <tabBarController id="1fI-CN-dFc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sn7-Ho-d5D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ffu-HJ-wVT"/>
+                        <segue destination="zxn-sC-Pft" kind="relationship" relationship="viewControllers" id="BmS-XL-QXI"/>
+                        <segue destination="HWg-l2-WKv" kind="relationship" relationship="viewControllers" id="Eir-1L-sim"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcw-AE-T7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613" y="-114.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0cX-nC-gYq">
+            <objects>
+                <viewController id="HWg-l2-WKv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4T0-1t-WEp"/>
+                        <viewControllerLayoutGuide type="bottom" id="kbN-Pa-6zH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cp5-NL-ZLT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="Personal" selectedImage="myImage" id="MlI-y4-od0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hR0-AE-iU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="752.25"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,45 +55,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yKh-2J-Vzq">
-                                <rect key="frame" x="146" y="493" width="308" height="29"/>
-                                <segments>
-                                    <segment title="Business"/>
-                                    <segment title="Personal"/>
-                                </segments>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Made by humans for humans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-vy-sU3">
-                                <rect key="frame" x="141" y="357" width="319" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please select the nature of your calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-X2-WIW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-Dh-syl">
+                                <rect key="frame" x="188" y="28" width="225" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ll4-Dh-syl" secondAttribute="height" multiplier="292:329" id="YFi-SR-kQC"/>
+                                    <constraint firstAttribute="width" constant="292" id="h4u-bh-vCh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YFi-SR-kQC"/>
+                                        <exclude reference="h4u-bh-vCh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="YFi-SR-kQC"/>
+                                        <include reference="h4u-bh-vCh"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please select the nature of your calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-X2-WIW">
                                 <rect key="frame" x="108" y="420" width="385" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-Dh-syl">
-                                <rect key="frame" x="188" y="38" width="225" height="179"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Made by humans for humans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-vy-sU3">
+                                <rect key="frame" x="141" y="201" width="319" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3yx-bj-Z8D"/>
-                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-111.5" id="AFx-Yu-A66"/>
-                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="140.5" id="SKP-bJ-3ZW"/>
-                            <constraint firstItem="yKh-2J-Vzq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="207" id="ajy-Ax-rK5"/>
-                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="70.5" id="jNn-VM-fFW"/>
-                            <constraint firstItem="yKh-2J-Vzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kHs-FH-gds"/>
-                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kba-NA-v6C"/>
-                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKc-Bh-6qC"/>
+                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="3Mn-da-u2R"/>
+                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-21.5" id="MSM-OX-665"/>
+                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="ZBp-pL-hDc"/>
+                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8D-02-WeQ"/>
+                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-207.5" id="djU-P8-YcN"/>
+                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="49" id="z41-eZ-E7K"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZBp-pL-hDc"/>
+                                <exclude reference="djU-P8-YcN"/>
+                                <exclude reference="3Mn-da-u2R"/>
+                                <exclude reference="MSM-OX-665"/>
+                                <exclude reference="d8D-02-WeQ"/>
+                                <exclude reference="z41-eZ-E7K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="ZBp-pL-hDc"/>
+                                <include reference="djU-P8-YcN"/>
+                                <include reference="3Mn-da-u2R"/>
+                                <include reference="MSM-OX-665"/>
+                                <include reference="d8D-02-WeQ"/>
+                                <include reference="z41-eZ-E7K"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" badgeValue="Home" selectedImage="myImage" id="OUw-a8-0aS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="-613" y="752.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="esS-GZ-LrS">
+            <objects>
+                <viewController id="zxn-sC-Pft" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UsX-3L-eCk"/>
+                        <viewControllerLayoutGuide type="bottom" id="KzC-Fv-wRX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4z8-l9-ng7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="Business" selectedImage="myImage" id="dew-y7-ebZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAW-gW-2Qm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1505" y="752.25"/>
         </scene>
     </scenes>
     <resources>
