@@ -34,6 +34,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kbN-Pa-6zH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cp5-NL-ZLT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -132,6 +133,7 @@
                         <viewControllerLayoutGuide type="bottom" id="KzC-Fv-wRX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4z8-l9-ng7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
