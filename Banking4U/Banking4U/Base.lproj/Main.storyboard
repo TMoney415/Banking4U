@@ -1,30 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1fI-CN-dFc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="fMp-Ec-5a8">
-            <objects>
-                <tabBarController id="1fI-CN-dFc" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="sn7-Ho-d5D">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ffu-HJ-wVT"/>
-                        <segue destination="zxn-sC-Pft" kind="relationship" relationship="viewControllers" id="BmS-XL-QXI"/>
-                        <segue destination="HWg-l2-WKv" kind="relationship" relationship="viewControllers" id="Eir-1L-sim"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lcw-AE-T7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-613" y="-114.75"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="0cX-nC-gYq">
             <objects>
@@ -48,6 +29,28 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XNg-GC-YZz" firstAttribute="centerX" secondItem="cp5-NL-ZLT" secondAttribute="centerX" id="L6J-UM-Zpd"/>
+                            <constraint firstItem="XNg-GC-YZz" firstAttribute="centerY" secondItem="cp5-NL-ZLT" secondAttribute="centerY" constant="-100" id="dJw-j5-kAx"/>
+                            <constraint firstItem="0jX-YF-Pa0" firstAttribute="centerX" secondItem="cp5-NL-ZLT" secondAttribute="centerX" id="yJp-Nc-Vjx"/>
+                            <constraint firstItem="0jX-YF-Pa0" firstAttribute="centerY" secondItem="cp5-NL-ZLT" secondAttribute="centerY" constant="43" id="ziX-cu-2km"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L6J-UM-Zpd"/>
+                                <exclude reference="dJw-j5-kAx"/>
+                                <exclude reference="yJp-Nc-Vjx"/>
+                                <exclude reference="ziX-cu-2km"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="L6J-UM-Zpd"/>
+                                <include reference="dJw-j5-kAx"/>
+                                <include reference="yJp-Nc-Vjx"/>
+                                <include reference="ziX-cu-2km"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="MlI-y4-od0"/>
                 </viewController>
@@ -98,34 +101,76 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-52-IAR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Personal"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="155" y="554" width="136" height="38"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="zxn-sC-Pft" kind="show" id="XrJ-7a-RCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="589-wU-uIB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Business"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="299" y="554" width="144" height="38"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="HWg-l2-WKv" kind="show" id="H4K-d8-jFq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="3Mn-da-u2R"/>
-                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-21.5" id="MSM-OX-665"/>
-                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="ZBp-pL-hDc"/>
-                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8D-02-WeQ"/>
-                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-207.5" id="djU-P8-YcN"/>
-                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="49" id="z41-eZ-E7K"/>
+                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="Lpo-XT-2bn"/>
+                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32.5" id="OEQ-ab-MeD"/>
+                            <constraint firstItem="ENR-52-IAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-77" id="URT-Rt-Yg9"/>
+                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="YGL-vD-OD5"/>
+                            <constraint firstItem="ll4-Dh-syl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-162.5" id="ega-cU-iGh"/>
+                            <constraint firstItem="1qG-vy-sU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hQl-sx-6dY"/>
+                            <constraint firstItem="RfS-X2-WIW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="92" id="lIU-dh-68z"/>
+                            <constraint firstItem="589-wU-uIB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="173" id="rcm-B1-Ble"/>
+                            <constraint firstItem="ENR-52-IAR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="173" id="vGn-g1-m73"/>
+                            <constraint firstItem="589-wU-uIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="71" id="zxU-20-OZu"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ENR-52-IAR"/>
+                                <exclude reference="589-wU-uIB"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="ZBp-pL-hDc"/>
-                                <exclude reference="djU-P8-YcN"/>
-                                <exclude reference="3Mn-da-u2R"/>
-                                <exclude reference="MSM-OX-665"/>
-                                <exclude reference="d8D-02-WeQ"/>
-                                <exclude reference="z41-eZ-E7K"/>
+                                <exclude reference="YGL-vD-OD5"/>
+                                <exclude reference="ega-cU-iGh"/>
+                                <exclude reference="OEQ-ab-MeD"/>
+                                <exclude reference="hQl-sx-6dY"/>
+                                <exclude reference="Lpo-XT-2bn"/>
+                                <exclude reference="lIU-dh-68z"/>
+                                <exclude reference="URT-Rt-Yg9"/>
+                                <exclude reference="vGn-g1-m73"/>
+                                <exclude reference="rcm-B1-Ble"/>
+                                <exclude reference="zxU-20-OZu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="ENR-52-IAR"/>
+                                <include reference="589-wU-uIB"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="ZBp-pL-hDc"/>
-                                <include reference="djU-P8-YcN"/>
-                                <include reference="3Mn-da-u2R"/>
-                                <include reference="MSM-OX-665"/>
-                                <include reference="d8D-02-WeQ"/>
-                                <include reference="z41-eZ-E7K"/>
+                                <include reference="YGL-vD-OD5"/>
+                                <include reference="ega-cU-iGh"/>
+                                <include reference="OEQ-ab-MeD"/>
+                                <include reference="hQl-sx-6dY"/>
+                                <include reference="Lpo-XT-2bn"/>
+                                <include reference="lIU-dh-68z"/>
+                                <include reference="URT-Rt-Yg9"/>
+                                <include reference="vGn-g1-m73"/>
+                                <include reference="rcm-B1-Ble"/>
+                                <include reference="zxU-20-OZu"/>
                             </mask>
                         </variation>
                     </view>
@@ -158,6 +203,28 @@
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TYe-FX-1oa" firstAttribute="centerY" secondItem="4z8-l9-ng7" secondAttribute="centerY" constant="-100" id="4mn-du-Mff"/>
+                            <constraint firstItem="d8w-8B-7kc" firstAttribute="centerY" secondItem="4z8-l9-ng7" secondAttribute="centerY" constant="43" id="LGy-ii-6M8"/>
+                            <constraint firstItem="TYe-FX-1oa" firstAttribute="centerX" secondItem="4z8-l9-ng7" secondAttribute="centerX" id="T2r-mR-dNR"/>
+                            <constraint firstItem="d8w-8B-7kc" firstAttribute="centerX" secondItem="4z8-l9-ng7" secondAttribute="centerX" id="t0Z-2u-s0a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4mn-du-Mff"/>
+                                <exclude reference="T2r-mR-dNR"/>
+                                <exclude reference="LGy-ii-6M8"/>
+                                <exclude reference="t0Z-2u-s0a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="4mn-du-Mff"/>
+                                <include reference="T2r-mR-dNR"/>
+                                <include reference="LGy-ii-6M8"/>
+                                <include reference="t0Z-2u-s0a"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="Business" systemItem="topRated" id="dew-y7-ebZ"/>
                 </viewController>
