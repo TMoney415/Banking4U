@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A707989D1CE501DC00EBC71E /* HousePriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707989C1CE501DC00EBC71E /* HousePriceViewController.swift */; };
-		A747D08D1CDD20E500828E36 /* BusinessCountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D08B1CDD20E500828E36 /* BusinessCountyViewController.swift */; };
 		A747D08E1CDD20E500828E36 /* PersonalCountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D08C1CDD20E500828E36 /* PersonalCountyViewController.swift */; };
 		D67E3D181CD7DE2C00D16023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E3D171CD7DE2C00D16023 /* AppDelegate.swift */; };
 		D67E3D1A1CD7DE2C00D16023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E3D191CD7DE2C00D16023 /* ViewController.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		A707989C1CE501DC00EBC71E /* HousePriceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousePriceViewController.swift; sourceTree = "<group>"; };
-		A747D08B1CDD20E500828E36 /* BusinessCountyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCountyViewController.swift; sourceTree = "<group>"; };
 		A747D08C1CDD20E500828E36 /* PersonalCountyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCountyViewController.swift; sourceTree = "<group>"; };
 		D67E3D141CD7DE2C00D16023 /* Banking4U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banking4U.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67E3D171CD7DE2C00D16023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				D67E3D1B1CD7DE2C00D16023 /* Main.storyboard */,
 				D67E3D1E1CD7DE2C00D16023 /* Assets.xcassets */,
 				D67E3D201CD7DE2C00D16023 /* LaunchScreen.storyboard */,
-				A747D08B1CDD20E500828E36 /* BusinessCountyViewController.swift */,
 				A707989C1CE501DC00EBC71E /* HousePriceViewController.swift */,
 				A747D08C1CDD20E500828E36 /* PersonalCountyViewController.swift */,
 				D67E3D231CD7DE2C00D16023 /* Info.plist */,
@@ -268,7 +265,6 @@
 				D67E3D1A1CD7DE2C00D16023 /* ViewController.swift in Sources */,
 				A747D08E1CDD20E500828E36 /* PersonalCountyViewController.swift in Sources */,
 				A707989D1CE501DC00EBC71E /* HousePriceViewController.swift in Sources */,
-				A747D08D1CDD20E500828E36 /* BusinessCountyViewController.swift in Sources */,
 				D67E3D181CD7DE2C00D16023 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
