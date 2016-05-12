@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBAction func butPersonal(sender: AnyObject) {
+        self.performSegueWithIdentifier("next", sender: "Personal")
+    }
+    @IBAction func butBusiness(sender: AnyObject) {
+        self.performSegueWithIdentifier("next", sender: "Business")
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +28,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dest = segue.destinationViewController as? PersonalCountyViewController
+        dest?.type = sender as! String
+    }
 }
 

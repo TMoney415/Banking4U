@@ -73,15 +73,27 @@ class PersonalCountyViewController: UIViewController, UIPickerViewDelegate {
     ]
     
     @IBOutlet var picker: UIPickerView!
-    
+    var type = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(type)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "countyToHousePrice") {
+            var svc = segue.destinationViewController as! HousePriceViewController;
+            let propertyTax = personalCountyPickerTranslator["Tuolumne"]
+            
+            svc.propertyTax = String(propertyTax)
+            
+        }
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -94,7 +106,7 @@ class PersonalCountyViewController: UIViewController, UIPickerViewDelegate {
     
     func pickerView(pickerView: UIPickerView,
         numberOfRowsInComponent component: Int) -> Int {
-            return 57
+        return 57
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -102,10 +114,5 @@ class PersonalCountyViewController: UIViewController, UIPickerViewDelegate {
     }
     
 }
-
-//pseudocode
-/*func whenSubmitClicked{ //submit button, iboutlet
-    goToNextPage(pickerViewTranslator[pickerView.text])
-}*/
 
 
