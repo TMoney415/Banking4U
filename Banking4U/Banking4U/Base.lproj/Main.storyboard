@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -52,20 +52,20 @@
                                     <rect key="frame" x="158" y="419" width="286" height="27"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-52-IAR">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Personal"/>
-                                <connections>
-                                    <segue destination="zxn-sC-Pft" kind="show" id="vla-Ff-dkp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="589-wU-uIB">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Business"/>
                                 <connections>
-                                    <segue destination="xC9-OV-e8E" kind="show" id="5iE-j5-enV"/>
+                                    <action selector="butBusiness:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AnD-F9-64m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-52-IAR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Personal"/>
+                                <connections>
+                                    <action selector="butPersonal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wbz-LB-REp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,8 +84,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="ENR-52-IAR"/>
                                 <exclude reference="589-wU-uIB"/>
+                                <exclude reference="ENR-52-IAR"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="rcm-B1-Ble"/>
@@ -102,8 +102,8 @@
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="ENR-52-IAR"/>
                                 <include reference="589-wU-uIB"/>
+                                <include reference="ENR-52-IAR"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="rcm-B1-Ble"/>
@@ -120,158 +120,13 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="OUw-a8-0aS"/>
+                    <connections>
+                        <segue destination="zxn-sC-Pft" kind="show" identifier="next" id="jmf-NR-VVp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-613" y="632.25"/>
-        </scene>
-        <!--Business County View Controller-->
-        <scene sceneID="8dJ-V1-6TM">
-            <objects>
-                <viewController id="xC9-OV-e8E" customClass="BusinessCountyViewController" customModule="Banking4U" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hCm-K6-XQt"/>
-                        <viewControllerLayoutGuide type="bottom" id="CpY-ZN-3l5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HC7-PH-5Qm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your current County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNg-GC-YZz">
-                                <rect key="frame" x="130" y="274" width="340" height="52"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
-                                <color key="textColor" red="0.11354221539999999" green="0.15769263059999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AR7-EP-RnO">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="0.020100812986999284" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="20" width="66" height="48"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="wNt-gg-Z3o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1z-yu-pcO">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.030145655374868241" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oqz-t8-V0d" kind="show" id="qa2-ba-Zad"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jX-YF-Pa0">
-                                <rect key="frame" x="0.0" y="335" width="600" height="216"/>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="XNg-GC-YZz" firstAttribute="centerX" secondItem="HC7-PH-5Qm" secondAttribute="centerX" id="1ZY-eX-xWX"/>
-                            <constraint firstItem="0jX-YF-Pa0" firstAttribute="centerX" secondItem="HC7-PH-5Qm" secondAttribute="centerX" id="96x-1P-5b0"/>
-                            <constraint firstItem="v1z-yu-pcO" firstAttribute="centerX" secondItem="HC7-PH-5Qm" secondAttribute="centerX" id="DJg-MV-jf3"/>
-                            <constraint firstItem="0jX-YF-Pa0" firstAttribute="centerY" secondItem="HC7-PH-5Qm" secondAttribute="centerY" constant="88" id="ebZ-PP-Fba"/>
-                            <constraint firstItem="v1z-yu-pcO" firstAttribute="centerY" secondItem="HC7-PH-5Qm" secondAttribute="centerY" constant="206" id="txd-Ca-D78"/>
-                            <constraint firstItem="XNg-GC-YZz" firstAttribute="centerY" secondItem="HC7-PH-5Qm" secondAttribute="centerY" constant="-55.5" id="wa2-dN-ieN"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="XNg-GC-YZz"/>
-                                <exclude reference="AR7-EP-RnO"/>
-                                <exclude reference="v1z-yu-pcO"/>
-                                <exclude reference="0jX-YF-Pa0"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="DJg-MV-jf3"/>
-                                <exclude reference="txd-Ca-D78"/>
-                                <exclude reference="1ZY-eX-xWX"/>
-                                <exclude reference="wa2-dN-ieN"/>
-                                <exclude reference="96x-1P-5b0"/>
-                                <exclude reference="ebZ-PP-Fba"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="XNg-GC-YZz"/>
-                                <include reference="AR7-EP-RnO"/>
-                                <include reference="v1z-yu-pcO"/>
-                                <include reference="0jX-YF-Pa0"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="DJg-MV-jf3"/>
-                                <include reference="txd-Ca-D78"/>
-                                <include reference="1ZY-eX-xWX"/>
-                                <include reference="wa2-dN-ieN"/>
-                                <include reference="96x-1P-5b0"/>
-                                <include reference="ebZ-PP-Fba"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="picker" destination="0jX-YF-Pa0" id="Kgb-dD-D07"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dk-c2-sj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="43" y="632.25"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2Ia-Cu-GS3">
-            <objects>
-                <viewController id="oqz-t8-V0d" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hLR-91-3fF"/>
-                        <viewControllerLayoutGuide type="bottom" id="SNs-FP-ZxN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lLW-Ux-vOy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muv-5g-3zN">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.080225848228442587" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="19" width="66" height="48"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="xC9-OV-e8E" kind="show" id="9kL-7t-WZA"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="end me now" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESx-Vg-90o">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="249" y="295" width="100" height="30"/>
-                                </variation>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Muv-5g-3zN"/>
-                                <exclude reference="ESx-Vg-90o"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="Muv-5g-3zN"/>
-                                <include reference="ESx-Vg-90o"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MKO-GF-5zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="43" y="1323.75"/>
         </scene>
         <!--Personal County View Controller-->
         <scene sceneID="esS-GZ-LrS">
@@ -285,15 +140,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pick your current county" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYe-FX-1oa">
-                                <rect key="frame" x="139" y="276" width="323" height="48"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
-                                <color key="textColor" red="0.11354221543377452" green="0.15769263055760507" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="140" y="283" width="322" height="34"/>
-                                </variation>
-                            </label>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8w-8B-7kc">
                                 <rect key="frame" x="0.0" y="335" width="600" height="216"/>
                                 <connections>
@@ -321,9 +167,15 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.11008059161256689" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bV8-F9-h7X" kind="show" id="Tcg-Qc-Aej"/>
+                                    <segue destination="bV8-F9-h7X" kind="show" identifier="countyToHousePrice" id="Tcg-Qc-Aej"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pick your current county" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYe-FX-1oa">
+                                <rect key="frame" x="139" y="276" width="323" height="48"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="0.11354221543377452" green="0.15769263055760507" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -372,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="-1253" y="632.25"/>
         </scene>
-        <!--View Controller-->
+        <!--House Price View Controller-->
         <scene sceneID="i1h-od-r1x">
             <objects>
-                <viewController id="bV8-F9-h7X" sceneMemberID="viewController">
+                <viewController id="bV8-F9-h7X" customClass="HousePriceViewController" customModule="Banking4U" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="itn-Te-Gu7"/>
                         <viewControllerLayoutGuide type="bottom" id="vr5-4h-Qrq"/>
@@ -397,13 +249,13 @@
                                     <segue destination="zxn-sC-Pft" kind="show" id="AGj-y3-ePH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in the end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ob-qko">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please save me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ob-qko">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="157" width="76" height="21"/>
+                                    <rect key="frame" x="216" y="114" width="168" height="61"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -421,6 +273,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="propTaxLabel" destination="mPg-ob-qko" id="TGw-32-qNg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WZ-kL-z8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -432,8 +287,6 @@
         <image name="myImage" width="625" height="680"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9kL-7t-WZA"/>
-        <segue reference="lak-G8-euj"/>
         <segue reference="AGj-y3-ePH"/>
     </inferredMetricsTieBreakers>
 </document>
