@@ -356,12 +356,12 @@
                                 <exclude reference="yfd-kZ-ucu"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="dJ0-6G-B29"/>
+                                <exclude reference="vgB-gX-78g"/>
                                 <exclude reference="4mn-du-Mff"/>
                                 <exclude reference="T2r-mR-dNR"/>
                                 <exclude reference="LGy-ii-6M8"/>
                                 <exclude reference="t0Z-2u-s0a"/>
-                                <exclude reference="dJ0-6G-B29"/>
-                                <exclude reference="vgB-gX-78g"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -370,12 +370,12 @@
                                 <include reference="yfd-kZ-ucu"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="dJ0-6G-B29"/>
+                                <include reference="vgB-gX-78g"/>
                                 <include reference="4mn-du-Mff"/>
                                 <include reference="T2r-mR-dNR"/>
                                 <include reference="LGy-ii-6M8"/>
                                 <include reference="t0Z-2u-s0a"/>
-                                <include reference="dJ0-6G-B29"/>
-                                <include reference="vgB-gX-78g"/>
                             </mask>
                         </variation>
                     </view>
@@ -400,14 +400,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kill me now" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ra-M0-fHM">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="252" y="218" width="97" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-gi-Qm5">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -421,18 +413,27 @@
                                     <segue destination="zxn-sC-Pft" kind="show" id="AGj-y3-ePH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in the end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ob-qko">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="157" width="76" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="2Ra-M0-fHM"/>
                                 <exclude reference="VcN-gi-Qm5"/>
+                                <exclude reference="mPg-ob-qko"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="2Ra-M0-fHM"/>
                                 <include reference="VcN-gi-Qm5"/>
+                                <include reference="mPg-ob-qko"/>
                             </mask>
                         </variation>
                     </view>
@@ -447,8 +448,8 @@
         <image name="myImage" width="625" height="680"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5iE-j5-enV"/>
+        <segue reference="9kL-7t-WZA"/>
         <segue reference="lak-G8-euj"/>
-        <segue reference="vla-Ff-dkp"/>
+        <segue reference="AGj-y3-ePH"/>
     </inferredMetricsTieBreakers>
 </document>
