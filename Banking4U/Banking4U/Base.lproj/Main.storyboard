@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -259,13 +260,13 @@
                                     <segue destination="zxn-sC-Pft" kind="show" id="AGj-y3-ePH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".688%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ob-qko">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ob-qko">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="204" y="232" width="192" height="119"/>
+                                    <rect key="frame" x="300" y="192" width="0.0" height="0.0"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Te-R0u">
@@ -273,6 +274,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="217" y="271" width="167" height="36"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqU-RU-Dac">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -280,23 +284,20 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="1" green="0.0" blue="0.050213125069721976" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculating Property Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bG-SO-22n">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="158" y="485" width="283" height="31"/>
+                                    <rect key="frame" x="218" y="453" width="165" height="60"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <segue destination="PIS-KB-nQB" kind="show" id="eq0-3b-8tf"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property tax in your County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-Pg-ipE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="117" y="167" width="364" height="52"/>
+                                    <rect key="frame" x="118" y="75" width="362" height="36"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-0V-ojY">
@@ -304,15 +305,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="111" y="434" width="378" height="30"/>
+                                    <rect key="frame" x="20" y="334" width="560" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kMe-0V-ojY" firstAttribute="centerY" secondItem="GA0-Jk-pC1" secondAttribute="centerY" constant="49" id="762-Kj-AUB"/>
-                            <constraint firstItem="3bG-SO-22n" firstAttribute="centerY" secondItem="GA0-Jk-pC1" secondAttribute="centerY" constant="100.5" id="8Ln-JC-P9V"/>
-                            <constraint firstItem="3bG-SO-22n" firstAttribute="centerX" secondItem="GA0-Jk-pC1" secondAttribute="centerX" id="FXJ-Js-vDS"/>
                             <constraint firstItem="vqU-RU-Dac" firstAttribute="centerX" secondItem="GA0-Jk-pC1" secondAttribute="centerX" id="Kbd-d1-ERU"/>
                             <constraint firstItem="mPg-ob-qko" firstAttribute="centerX" secondItem="GA0-Jk-pC1" secondAttribute="centerX" id="SZ1-Jt-RKQ"/>
                             <constraint firstItem="TtB-Pg-ipE" firstAttribute="centerX" secondItem="GA0-Jk-pC1" secondAttribute="centerX" constant="-1" id="VW0-fZ-0jq"/>
@@ -331,25 +330,22 @@
                                 <exclude reference="mPg-ob-qko"/>
                                 <exclude reference="MY1-Te-R0u"/>
                                 <exclude reference="vqU-RU-Dac"/>
-                                <exclude reference="3bG-SO-22n"/>
                                 <exclude reference="TtB-Pg-ipE"/>
                                 <exclude reference="kMe-0V-ojY"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="VW0-fZ-0jq"/>
-                                <exclude reference="yDb-CN-4Ef"/>
-                                <exclude reference="SZ1-Jt-RKQ"/>
-                                <exclude reference="rPv-wf-aR6"/>
-                                <exclude reference="o6N-AK-WgL"/>
-                                <exclude reference="phJ-CR-W0o"/>
                                 <exclude reference="762-Kj-AUB"/>
                                 <exclude reference="cvx-Wz-xgN"/>
                                 <exclude reference="jUL-y2-WZ6"/>
                                 <exclude reference="zYP-Dd-99I"/>
-                                <exclude reference="8Ln-JC-P9V"/>
-                                <exclude reference="FXJ-Js-vDS"/>
                                 <exclude reference="Kbd-d1-ERU"/>
                                 <exclude reference="uEh-Q1-HRs"/>
+                                <exclude reference="o6N-AK-WgL"/>
+                                <exclude reference="phJ-CR-W0o"/>
+                                <exclude reference="VW0-fZ-0jq"/>
+                                <exclude reference="yDb-CN-4Ef"/>
+                                <exclude reference="SZ1-Jt-RKQ"/>
+                                <exclude reference="rPv-wf-aR6"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -358,25 +354,22 @@
                                 <include reference="mPg-ob-qko"/>
                                 <include reference="MY1-Te-R0u"/>
                                 <include reference="vqU-RU-Dac"/>
-                                <include reference="3bG-SO-22n"/>
                                 <include reference="TtB-Pg-ipE"/>
                                 <include reference="kMe-0V-ojY"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="VW0-fZ-0jq"/>
-                                <include reference="yDb-CN-4Ef"/>
-                                <include reference="SZ1-Jt-RKQ"/>
-                                <include reference="rPv-wf-aR6"/>
-                                <include reference="o6N-AK-WgL"/>
-                                <include reference="phJ-CR-W0o"/>
                                 <include reference="762-Kj-AUB"/>
                                 <include reference="cvx-Wz-xgN"/>
                                 <include reference="jUL-y2-WZ6"/>
                                 <include reference="zYP-Dd-99I"/>
-                                <include reference="8Ln-JC-P9V"/>
-                                <include reference="FXJ-Js-vDS"/>
                                 <include reference="Kbd-d1-ERU"/>
                                 <include reference="uEh-Q1-HRs"/>
+                                <include reference="o6N-AK-WgL"/>
+                                <include reference="phJ-CR-W0o"/>
+                                <include reference="VW0-fZ-0jq"/>
+                                <include reference="yDb-CN-4Ef"/>
+                                <include reference="SZ1-Jt-RKQ"/>
+                                <include reference="rPv-wf-aR6"/>
                             </mask>
                         </variation>
                     </view>
@@ -387,6 +380,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WZ-kL-z8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1253" y="1323.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ErQ-hz-IgM">
+            <objects>
+                <viewController id="PIS-KB-nQB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BYq-nu-6yX"/>
+                        <viewControllerLayoutGuide type="bottom" id="csV-G3-PpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r2O-EN-tw6">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbe-hG-Qtt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.060231345866727182" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="11" width="66" height="48"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Qbe-hG-Qtt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="Qbe-hG-Qtt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LyU-7Q-leb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1253" y="2014.5"/>
         </scene>
     </scenes>
     <resources>
