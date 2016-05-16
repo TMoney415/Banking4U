@@ -382,10 +382,10 @@
             </objects>
             <point key="canvasLocation" x="-1253" y="1323.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Overall Expenses View Controller-->
         <scene sceneID="ErQ-hz-IgM">
             <objects>
-                <viewController id="PIS-KB-nQB" sceneMemberID="viewController">
+                <viewController id="PIS-KB-nQB" customClass="OverallExpensesViewController" customModule="Banking4U" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BYq-nu-6yX"/>
                         <viewControllerLayoutGuide type="bottom" id="csV-G3-PpY"/>
