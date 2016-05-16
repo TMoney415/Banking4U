@@ -263,7 +263,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ob-qko">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="300" y="192" width="0.0" height="0.0"/>
@@ -272,7 +272,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Te-R0u">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="217" y="271" width="167" height="36"/>
@@ -294,7 +294,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property tax in your County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-Pg-ipE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="118" y="75" width="362" height="36"/>
@@ -390,6 +390,7 @@
                         <viewControllerLayoutGuide type="bottom" id="csV-G3-PpY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r2O-EN-tw6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1db-Vr-3cx">
@@ -405,20 +406,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clothing Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pg-Ge-yHG">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="171" y="314" width="258" height="36"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-A1-HBI">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="193" y="203" width="216" height="29"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-iD-cPn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -434,34 +429,22 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="136" y="240" width="329" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-HK-s9o">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="136" y="473" width="329" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="681-6A-bD9">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="136" y="352" width="329" height="30"/>
-                                </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdT-Ta-8D6">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="187" y="430" width="227" height="27"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -496,23 +479,23 @@
                                 <exclude reference="NdT-Ta-8D6"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8sc-nE-lJl"/>
-                                <exclude reference="YsY-hN-8Dr"/>
-                                <exclude reference="uVl-Dz-fbx"/>
-                                <exclude reference="61z-4V-vfE"/>
-                                <exclude reference="mHR-KT-awy"/>
-                                <exclude reference="6PE-gQ-cw9"/>
-                                <exclude reference="6rQ-Uy-c1r"/>
-                                <exclude reference="8TI-Bs-1on"/>
-                                <exclude reference="HtN-hm-rJ2"/>
-                                <exclude reference="jfv-fa-6PP"/>
-                                <exclude reference="IyA-al-qTl"/>
-                                <exclude reference="PgB-oG-xor"/>
                                 <exclude reference="PmJ-83-k2g"/>
                                 <exclude reference="Xua-Uf-KcS"/>
                                 <exclude reference="YCL-ct-0pV"/>
+                                <exclude reference="8TI-Bs-1on"/>
+                                <exclude reference="HtN-hm-rJ2"/>
+                                <exclude reference="jfv-fa-6PP"/>
+                                <exclude reference="8sc-nE-lJl"/>
+                                <exclude reference="YsY-hN-8Dr"/>
+                                <exclude reference="uVl-Dz-fbx"/>
                                 <exclude reference="Uxk-X5-J1Z"/>
                                 <exclude reference="yH9-Yt-4n7"/>
+                                <exclude reference="6PE-gQ-cw9"/>
+                                <exclude reference="6rQ-Uy-c1r"/>
+                                <exclude reference="61z-4V-vfE"/>
+                                <exclude reference="mHR-KT-awy"/>
+                                <exclude reference="IyA-al-qTl"/>
+                                <exclude reference="PgB-oG-xor"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -527,23 +510,23 @@
                                 <include reference="NdT-Ta-8D6"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8sc-nE-lJl"/>
-                                <include reference="YsY-hN-8Dr"/>
-                                <include reference="uVl-Dz-fbx"/>
-                                <include reference="61z-4V-vfE"/>
-                                <include reference="mHR-KT-awy"/>
-                                <include reference="6PE-gQ-cw9"/>
-                                <include reference="6rQ-Uy-c1r"/>
-                                <include reference="8TI-Bs-1on"/>
-                                <include reference="HtN-hm-rJ2"/>
-                                <include reference="jfv-fa-6PP"/>
-                                <include reference="IyA-al-qTl"/>
-                                <include reference="PgB-oG-xor"/>
                                 <include reference="PmJ-83-k2g"/>
                                 <include reference="Xua-Uf-KcS"/>
                                 <include reference="YCL-ct-0pV"/>
+                                <include reference="8TI-Bs-1on"/>
+                                <include reference="HtN-hm-rJ2"/>
+                                <include reference="jfv-fa-6PP"/>
+                                <include reference="8sc-nE-lJl"/>
+                                <include reference="YsY-hN-8Dr"/>
+                                <include reference="uVl-Dz-fbx"/>
                                 <include reference="Uxk-X5-J1Z"/>
                                 <include reference="yH9-Yt-4n7"/>
+                                <include reference="6PE-gQ-cw9"/>
+                                <include reference="6rQ-Uy-c1r"/>
+                                <include reference="61z-4V-vfE"/>
+                                <include reference="mHR-KT-awy"/>
+                                <include reference="IyA-al-qTl"/>
+                                <include reference="PgB-oG-xor"/>
                             </mask>
                         </variation>
                     </view>
@@ -561,6 +544,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2iY-0o-0bj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gvD-T8-TQi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYY-ll-Zlm">
