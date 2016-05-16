@@ -89,10 +89,11 @@ class PersonalCountyViewController: UIViewController, UIPickerViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "countyToHousePrice") {
             var svc = segue.destinationViewController as! HousePriceViewController;
-            let propertyTax = personalCountyPickerTranslator["Tuolumne"]
             
+            let county = personalCountyPicker[picker.selectedRowInComponent(0)]
+            let propertyTax = personalCountyPickerTranslator[county]!
             svc.propertyTax = String(propertyTax)
-            
+            svc.type = self.type
         }
     }
     
