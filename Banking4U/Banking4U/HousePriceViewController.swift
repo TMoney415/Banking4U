@@ -11,26 +11,37 @@ import UIKit
 class HousePriceViewController: UIViewController {
     
     var propertyTax:String?
+    var type = ""
 
     @IBOutlet weak var propTaxLabel: UILabel!
+    @IBOutlet weak var propertyTypeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.'
-        printDatSheit()
-        propTaxVerify()
+        print(type)
+        if type == "Personal" {
+            personalPropTaxVerify()
+        }
+        if type == "Business" {
+            businessPropTaxVerify()
+        }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func printDatSheit() {
-        print(propertyTax)
+    func personalPropTaxVerify() {
+        propTaxLabel.text = propertyTax
+        propertyTypeLabel.text = "Original House Value"
+    }
+    func businessPropTaxVerify() {
+        propTaxLabel.text = propertyTax
+        propertyTypeLabel.text = "Original Property Value"
     }
     
-    func propTaxVerify() {
-        propTaxLabel.text = propertyTax
-    }
+
 }
