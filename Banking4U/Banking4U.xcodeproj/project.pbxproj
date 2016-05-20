@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A707989D1CE501DC00EBC71E /* HousePriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A707989C1CE501DC00EBC71E /* HousePriceViewController.swift */; };
 		A747D08E1CDD20E500828E36 /* PersonalCountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747D08C1CDD20E500828E36 /* PersonalCountyViewController.swift */; };
+		A77350851CEBC0F500508868 /* OverallExpenses2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77350841CEBC0F500508868 /* OverallExpenses2ViewController.swift */; };
 		A78DC6231CEA4DA40092DF42 /* OverallExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78DC6221CEA4DA40092DF42 /* OverallExpensesViewController.swift */; };
 		D67E3D181CD7DE2C00D16023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E3D171CD7DE2C00D16023 /* AppDelegate.swift */; };
 		D67E3D1A1CD7DE2C00D16023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E3D191CD7DE2C00D16023 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		A707989C1CE501DC00EBC71E /* HousePriceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousePriceViewController.swift; sourceTree = "<group>"; };
 		A747D08C1CDD20E500828E36 /* PersonalCountyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCountyViewController.swift; sourceTree = "<group>"; };
+		A77350841CEBC0F500508868 /* OverallExpenses2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverallExpenses2ViewController.swift; sourceTree = "<group>"; };
 		A78DC6221CEA4DA40092DF42 /* OverallExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverallExpensesViewController.swift; sourceTree = "<group>"; };
 		D67E3D141CD7DE2C00D16023 /* Banking4U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banking4U.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67E3D171CD7DE2C00D16023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				D67E3D1E1CD7DE2C00D16023 /* Assets.xcassets */,
 				D67E3D201CD7DE2C00D16023 /* LaunchScreen.storyboard */,
 				A707989C1CE501DC00EBC71E /* HousePriceViewController.swift */,
+				A77350841CEBC0F500508868 /* OverallExpenses2ViewController.swift */,
 				A78DC6221CEA4DA40092DF42 /* OverallExpensesViewController.swift */,
 				A747D08C1CDD20E500828E36 /* PersonalCountyViewController.swift */,
 				D67E3D231CD7DE2C00D16023 /* Info.plist */,
@@ -269,6 +272,7 @@
 				A747D08E1CDD20E500828E36 /* PersonalCountyViewController.swift in Sources */,
 				A707989D1CE501DC00EBC71E /* HousePriceViewController.swift in Sources */,
 				D67E3D181CD7DE2C00D16023 /* AppDelegate.swift in Sources */,
+				A77350851CEBC0F500508868 /* OverallExpenses2ViewController.swift in Sources */,
 				A78DC6231CEA4DA40092DF42 /* OverallExpensesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

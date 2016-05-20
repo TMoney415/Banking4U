@@ -71,7 +71,6 @@ class PersonalCountyViewController: UIViewController, UIPickerViewDelegate {
         "Yolo": 0.926,
         "Yuba": 0.960
     ]
-    
     @IBOutlet var picker: UIPickerView!
     var type = ""
 
@@ -80,40 +79,34 @@ class PersonalCountyViewController: UIViewController, UIPickerViewDelegate {
         // Do any additional setup after loading the view.
         print(type)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "countyToHousePrice") {
             var svc = segue.destinationViewController as! HousePriceViewController;
             
             let county = personalCountyPicker[picker.selectedRowInComponent(0)]
-            let propertyTax = personalCountyPickerTranslator[county]!
+            if let propertyTax = personalCountyPickerTranslator[county] {
             svc.propertyTax = String(propertyTax)
+            }
             svc.type = self.type
         }
     }
-    
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return personalCountyPicker[row]
     }
-    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
-    
     func pickerView(pickerView: UIPickerView,
         numberOfRowsInComponent component: Int) -> Int {
         return 57
     }
-    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(row)
     }
-    
 }
 
 
