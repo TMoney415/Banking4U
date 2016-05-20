@@ -39,12 +39,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please select the nature of your calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-X2-WIW">
-                                <rect key="frame" x="108" y="420" width="385" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Made by humans for humans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-vy-sU3">
                                 <rect key="frame" x="141" y="201" width="319" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -70,6 +64,15 @@
                                     <action selector="butPersonal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wbz-LB-REp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please select the nature of your calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-X2-WIW">
+                                <rect key="frame" x="108" y="420" width="385" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="103" y="454" width="395" height="75"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -278,19 +281,6 @@
                                     <rect key="frame" x="217" y="271" width="167" height="36"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqU-RU-Dac">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.050213125069721976" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="259" y="453" width="82" height="60"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="PIS-KB-nQB" kind="show" identifier="housePriceToOverallExpenses" id="eq0-3b-8tf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property tax in your County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-Pg-ipE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -304,7 +294,7 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.75699170250000003" green="0.85500152269999996" blue="0.90540167299999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="334" width="560" height="30"/>
                                 </variation>
@@ -312,6 +302,19 @@
                                     <action selector="propertyValueInput:" destination="bV8-F9-h7X" eventType="editingChanged" id="K6h-SG-bTu"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqU-RU-Dac">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.050213125069721976" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="259" y="181" width="82" height="60"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="PIS-KB-nQB" kind="show" identifier="housePriceToOverallExpenses" id="eq0-3b-8tf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -333,9 +336,9 @@
                                 <exclude reference="VcN-gi-Qm5"/>
                                 <exclude reference="mPg-ob-qko"/>
                                 <exclude reference="MY1-Te-R0u"/>
-                                <exclude reference="vqU-RU-Dac"/>
                                 <exclude reference="TtB-Pg-ipE"/>
                                 <exclude reference="kMe-0V-ojY"/>
+                                <exclude reference="vqU-RU-Dac"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="762-Kj-AUB"/>
@@ -357,9 +360,9 @@
                                 <include reference="VcN-gi-Qm5"/>
                                 <include reference="mPg-ob-qko"/>
                                 <include reference="MY1-Te-R0u"/>
-                                <include reference="vqU-RU-Dac"/>
                                 <include reference="TtB-Pg-ipE"/>
                                 <include reference="kMe-0V-ojY"/>
+                                <include reference="vqU-RU-Dac"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="762-Kj-AUB"/>
@@ -430,23 +433,10 @@
                                     <rect key="frame" x="199" y="104" width="203" height="36"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-iD-cPn">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="259" y="601" width="82" height="60"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="7dY-KZ-IWg" kind="show" id="ady-HI-W5P"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-JW-Ac8">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="140" width="560" height="30"/>
                                 </variation>
@@ -457,7 +447,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-HK-s9o">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="373" width="560" height="30"/>
                                 </variation>
@@ -468,7 +458,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="681-6A-bD9">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="252" width="560" height="30"/>
                                 </variation>
@@ -485,6 +475,19 @@
                                     <rect key="frame" x="193" y="337" width="215" height="36"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-iD-cPn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="259" y="527" width="82" height="60"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="7dY-KZ-IWg" kind="show" id="ady-HI-W5P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -511,11 +514,11 @@
                                 <exclude reference="1db-Vr-3cx"/>
                                 <exclude reference="1pg-Ge-yHG"/>
                                 <exclude reference="Crn-A1-HBI"/>
-                                <exclude reference="tCL-iD-cPn"/>
                                 <exclude reference="rCn-JW-Ac8"/>
                                 <exclude reference="0RE-HK-s9o"/>
                                 <exclude reference="681-6A-bD9"/>
                                 <exclude reference="NdT-Ta-8D6"/>
+                                <exclude reference="tCL-iD-cPn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="PmJ-83-k2g"/>
@@ -542,11 +545,11 @@
                                 <include reference="1db-Vr-3cx"/>
                                 <include reference="1pg-Ge-yHG"/>
                                 <include reference="Crn-A1-HBI"/>
-                                <include reference="tCL-iD-cPn"/>
                                 <include reference="rCn-JW-Ac8"/>
                                 <include reference="0RE-HK-s9o"/>
                                 <include reference="681-6A-bD9"/>
                                 <include reference="NdT-Ta-8D6"/>
+                                <include reference="tCL-iD-cPn"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="PmJ-83-k2g"/>
@@ -604,16 +607,38 @@
                                     <segue destination="PIS-KB-nQB" kind="show" id="6U0-Tl-HaQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Yearly Expense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKN-Lh-SJK">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.13651583033977666" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="118" y="262" width="364" height="47"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-He-FrQ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0010991754808006684" green="0.55056423611111116" blue="0.071760165656598818" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="376" width="50" height="48"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="jYY-ll-Zlm"/>
+                                <exclude reference="hKN-Lh-SJK"/>
+                                <exclude reference="4Ke-He-FrQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="jYY-ll-Zlm"/>
+                                <include reference="hKN-Lh-SJK"/>
+                                <include reference="4Ke-He-FrQ"/>
                             </mask>
                         </variation>
                     </view>
@@ -630,6 +655,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="eq0-3b-8tf"/>
         <segue reference="UZ1-uZ-FAK"/>
-        <segue reference="AGj-y3-ePH"/>
+        <segue reference="jmf-NR-VVp"/>
     </inferredMetricsTieBreakers>
 </document>
