@@ -288,7 +288,7 @@
                                     <rect key="frame" x="259" y="453" width="82" height="60"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="PIS-KB-nQB" kind="show" id="eq0-3b-8tf"/>
+                                    <segue destination="PIS-KB-nQB" kind="show" identifier="housePriceToOverallExpenses" id="eq0-3b-8tf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property tax in your County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-Pg-ipE">
@@ -302,11 +302,15 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-0V-ojY">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.75699170250000003" green="0.85500152269999996" blue="0.90540167299999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="334" width="560" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="propertyValueInput:" destination="bV8-F9-h7X" eventType="editingChanged" id="K6h-SG-bTu"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -376,6 +380,7 @@
                     <connections>
                         <outlet property="propTaxLabel" destination="mPg-ob-qko" id="TGw-32-qNg"/>
                         <outlet property="propertyTypeLabel" destination="MY1-Te-R0u" id="XLt-7Y-Pz6"/>
+                        <outlet property="propertyValueLabel" destination="kMe-0V-ojY" id="qbC-iD-nwC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3WZ-kL-z8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -445,6 +450,9 @@
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="140" width="560" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="foodExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="EEC-ej-GYk"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-HK-s9o">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -453,6 +461,9 @@
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="373" width="560" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="travelExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="3wC-pg-I9e"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="681-6A-bD9">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -461,6 +472,9 @@
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="252" width="560" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="clothingExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="8oC-zQ-UA5"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdT-Ta-8D6">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -555,15 +569,20 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="clothingExpenseBox" destination="681-6A-bD9" id="lEw-6U-BgR"/>
+                        <outlet property="foodExpenseBox" destination="rCn-JW-Ac8" id="gUm-10-sf9"/>
+                        <outlet property="travelExpenseBox" destination="0RE-HK-s9o" id="VZG-Ih-BtC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyU-7Q-leb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1253" y="2014.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Overall Expenses2 View Controller-->
         <scene sceneID="Al6-hj-pnE">
             <objects>
-                <viewController id="7dY-KZ-IWg" sceneMemberID="viewController">
+                <viewController id="7dY-KZ-IWg" customClass="OverallExpenses2ViewController" customModule="Banking4U" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tZG-b3-Kac"/>
                         <viewControllerLayoutGuide type="bottom" id="2iY-0o-0bj"/>
@@ -609,8 +628,8 @@
         <image name="myImage" width="625" height="680"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AGj-y3-ePH"/>
+        <segue reference="eq0-3b-8tf"/>
         <segue reference="UZ1-uZ-FAK"/>
-        <segue reference="6U0-Tl-HaQ"/>
+        <segue reference="AGj-y3-ePH"/>
     </inferredMetricsTieBreakers>
 </document>
