@@ -39,13 +39,13 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Made by humans for humans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-vy-sU3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You are the creator of your own financial future." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-vy-sU3">
                                 <rect key="frame" x="141" y="201" width="319" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.28893432344616959" blue="0.92144097222222221" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="158" y="419" width="286" height="27"/>
+                                    <rect key="frame" x="61" y="419" width="480" height="27"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="589-wU-uIB">
@@ -277,7 +277,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-0V-ojY">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.75699170250000003" green="0.85500152269999996" blue="0.90540167299999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.64490609219191919" blue="0.64490609219191919" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -408,6 +408,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-JW-Ac8">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.7131668244949495" blue="0.7131668244949495" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -416,6 +417,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-HK-s9o">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.69758128156565657" blue="0.68355933068167374" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -424,6 +426,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="681-6A-bD9">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.69406960227272729" blue="0.68011823899748192" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -443,7 +446,7 @@
                                     <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7dY-KZ-IWg" kind="show" id="ady-HI-W5P"/>
+                                    <segue destination="7dY-KZ-IWg" kind="show" identifier="overallExpensesToOverallExpenses2" id="ady-HI-W5P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -454,7 +457,7 @@
                             <constraint firstItem="1pg-Ge-yHG" firstAttribute="centerX" secondItem="r2O-EN-tw6" secondAttribute="centerX" id="6rQ-Uy-c1r"/>
                             <constraint firstItem="681-6A-bD9" firstAttribute="centerY" secondItem="r2O-EN-tw6" secondAttribute="centerY" constant="-33" id="8TI-Bs-1on"/>
                             <constraint firstItem="rCn-JW-Ac8" firstAttribute="centerY" secondItem="r2O-EN-tw6" secondAttribute="centerY" constant="-145" id="8sc-nE-lJl"/>
-                            <constraint firstItem="tCL-iD-cPn" firstAttribute="centerY" secondItem="r2O-EN-tw6" secondAttribute="centerY" constant="117" id="Fhp-uh-SSs"/>
+                            <constraint firstItem="tCL-iD-cPn" firstAttribute="centerY" secondItem="r2O-EN-tw6" secondAttribute="centerY" constant="150" id="Fhp-uh-SSs"/>
                             <constraint firstItem="681-6A-bD9" firstAttribute="leading" secondItem="r2O-EN-tw6" secondAttribute="leadingMargin" id="HtN-hm-rJ2"/>
                             <constraint firstItem="NdT-Ta-8D6" firstAttribute="centerY" secondItem="r2O-EN-tw6" secondAttribute="centerY" constant="54.5" id="IyA-al-qTl"/>
                             <constraint firstItem="tCL-iD-cPn" firstAttribute="centerX" secondItem="r2O-EN-tw6" secondAttribute="centerX" id="OKw-GR-ekm"/>
@@ -538,7 +541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyU-7Q-leb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1253" y="2014.5"/>
+            <point key="canvasLocation" x="-613" y="1323.75"/>
         </scene>
         <!--Overall Expenses2 View Controller-->
         <scene sceneID="Al6-hj-pnE">
@@ -592,10 +595,10 @@
                                 <exclude reference="4Ke-He-FrQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="B6u-h2-BSy"/>
-                                <exclude reference="ckI-9b-Kbh"/>
                                 <exclude reference="LIM-2K-ZiG"/>
                                 <exclude reference="bw7-g5-FUs"/>
+                                <exclude reference="B6u-h2-BSy"/>
+                                <exclude reference="ckI-9b-Kbh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -605,17 +608,20 @@
                                 <include reference="4Ke-He-FrQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="B6u-h2-BSy"/>
-                                <include reference="ckI-9b-Kbh"/>
                                 <include reference="LIM-2K-ZiG"/>
                                 <include reference="bw7-g5-FUs"/>
+                                <include reference="B6u-h2-BSy"/>
+                                <include reference="ckI-9b-Kbh"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="overallExpenseLabel" destination="4Ke-He-FrQ" id="voK-XR-qMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JqL-ya-DSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1253" y="2674.5"/>
+            <point key="canvasLocation" x="-613" y="1987.5"/>
         </scene>
     </scenes>
     <resources>
@@ -623,7 +629,7 @@
         <image name="myImage" width="625" height="680"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jmf-NR-VVp"/>
+        <segue reference="AGj-y3-ePH"/>
         <segue reference="UZ1-uZ-FAK"/>
         <segue reference="6U0-Tl-HaQ"/>
     </inferredMetricsTieBreakers>

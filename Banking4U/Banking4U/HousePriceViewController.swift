@@ -45,7 +45,7 @@ class HousePriceViewController: UIViewController {
         
         print(propertyValueLabel.text)
         if let inputStr = propertyValueLabel.text, propertyValue = Double(inputStr), tax = Double(propTaxLabel.text!){
-            propertyValueNumber = propertyValue * tax
+            propertyValueNumber = propertyValue * tax * 0.01
             print(propertyValueNumber)
         } else {
             let alert = UIAlertController(title: "ERROR", message: "ENTER NUMBER", preferredStyle: .Alert)
