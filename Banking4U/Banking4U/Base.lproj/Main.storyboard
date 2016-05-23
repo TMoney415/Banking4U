@@ -262,36 +262,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="300" y="192" width="0.0" height="0.0"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Te-R0u">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="217" y="271" width="167" height="36"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property tax in your County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-Pg-ipE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="118" y="75" width="362" height="36"/>
-                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-0V-ojY">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.75699170250000003" green="0.85500152269999996" blue="0.90540167299999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="334" width="560" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="propertyValueInput:" destination="bV8-F9-h7X" eventType="editingChanged" id="K6h-SG-bTu"/>
                                 </connections>
@@ -302,9 +290,6 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="0.0" blue="0.050213125069721976" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="259" y="453" width="82" height="60"/>
-                                </variation>
                                 <connections>
                                     <segue destination="PIS-KB-nQB" kind="show" identifier="housePriceToOverallExpenses" id="eq0-3b-8tf"/>
                                 </connections>
@@ -414,26 +399,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="176" y="207" width="248" height="36"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-A1-HBI">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="199" y="104" width="203" height="36"/>
-                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-JW-Ac8">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="140" width="560" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="foodExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="EEC-ej-GYk"/>
                                 </connections>
@@ -442,9 +418,6 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="373" width="560" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="travelExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="3wC-pg-I9e"/>
                                 </connections>
@@ -453,9 +426,6 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="252" width="560" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="clothingExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="8oC-zQ-UA5"/>
                                 </connections>
@@ -465,9 +435,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="193" y="337" width="215" height="36"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-iD-cPn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -512,23 +479,23 @@
                                 <exclude reference="tCL-iD-cPn"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8sc-nE-lJl"/>
-                                <exclude reference="YsY-hN-8Dr"/>
-                                <exclude reference="uVl-Dz-fbx"/>
-                                <exclude reference="61z-4V-vfE"/>
-                                <exclude reference="mHR-KT-awy"/>
-                                <exclude reference="8TI-Bs-1on"/>
-                                <exclude reference="HtN-hm-rJ2"/>
-                                <exclude reference="jfv-fa-6PP"/>
-                                <exclude reference="6PE-gQ-cw9"/>
-                                <exclude reference="6rQ-Uy-c1r"/>
                                 <exclude reference="PmJ-83-k2g"/>
                                 <exclude reference="Xua-Uf-KcS"/>
                                 <exclude reference="YCL-ct-0pV"/>
-                                <exclude reference="IyA-al-qTl"/>
-                                <exclude reference="PgB-oG-xor"/>
+                                <exclude reference="8TI-Bs-1on"/>
+                                <exclude reference="HtN-hm-rJ2"/>
+                                <exclude reference="jfv-fa-6PP"/>
+                                <exclude reference="8sc-nE-lJl"/>
+                                <exclude reference="YsY-hN-8Dr"/>
+                                <exclude reference="uVl-Dz-fbx"/>
                                 <exclude reference="Fhp-uh-SSs"/>
                                 <exclude reference="OKw-GR-ekm"/>
+                                <exclude reference="6PE-gQ-cw9"/>
+                                <exclude reference="6rQ-Uy-c1r"/>
+                                <exclude reference="61z-4V-vfE"/>
+                                <exclude reference="mHR-KT-awy"/>
+                                <exclude reference="IyA-al-qTl"/>
+                                <exclude reference="PgB-oG-xor"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -543,23 +510,23 @@
                                 <include reference="tCL-iD-cPn"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8sc-nE-lJl"/>
-                                <include reference="YsY-hN-8Dr"/>
-                                <include reference="uVl-Dz-fbx"/>
-                                <include reference="61z-4V-vfE"/>
-                                <include reference="mHR-KT-awy"/>
-                                <include reference="8TI-Bs-1on"/>
-                                <include reference="HtN-hm-rJ2"/>
-                                <include reference="jfv-fa-6PP"/>
-                                <include reference="6PE-gQ-cw9"/>
-                                <include reference="6rQ-Uy-c1r"/>
                                 <include reference="PmJ-83-k2g"/>
                                 <include reference="Xua-Uf-KcS"/>
                                 <include reference="YCL-ct-0pV"/>
-                                <include reference="IyA-al-qTl"/>
-                                <include reference="PgB-oG-xor"/>
+                                <include reference="8TI-Bs-1on"/>
+                                <include reference="HtN-hm-rJ2"/>
+                                <include reference="jfv-fa-6PP"/>
+                                <include reference="8sc-nE-lJl"/>
+                                <include reference="YsY-hN-8Dr"/>
+                                <include reference="uVl-Dz-fbx"/>
                                 <include reference="Fhp-uh-SSs"/>
                                 <include reference="OKw-GR-ekm"/>
+                                <include reference="6PE-gQ-cw9"/>
+                                <include reference="6rQ-Uy-c1r"/>
+                                <include reference="61z-4V-vfE"/>
+                                <include reference="mHR-KT-awy"/>
+                                <include reference="IyA-al-qTl"/>
+                                <include reference="PgB-oG-xor"/>
                             </mask>
                         </variation>
                     </view>
@@ -603,9 +570,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.13651583033977666" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="118" y="262" width="364" height="47"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-He-FrQ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -628,10 +592,10 @@
                                 <exclude reference="4Ke-He-FrQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="LIM-2K-ZiG"/>
-                                <exclude reference="bw7-g5-FUs"/>
                                 <exclude reference="B6u-h2-BSy"/>
                                 <exclude reference="ckI-9b-Kbh"/>
+                                <exclude reference="LIM-2K-ZiG"/>
+                                <exclude reference="bw7-g5-FUs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -641,10 +605,10 @@
                                 <include reference="4Ke-He-FrQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="LIM-2K-ZiG"/>
-                                <include reference="bw7-g5-FUs"/>
                                 <include reference="B6u-h2-BSy"/>
                                 <include reference="ckI-9b-Kbh"/>
+                                <include reference="LIM-2K-ZiG"/>
+                                <include reference="bw7-g5-FUs"/>
                             </mask>
                         </variation>
                     </view>
