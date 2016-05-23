@@ -66,4 +66,14 @@ class OverallExpensesViewController: UIViewController {
         print(overallExpensesNumber)
 //fix this code-----------------------------------------------------------------------
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "overallExpensesToOverallExpenses2") {
+            var svc = segue.destinationViewController as! OverallExpenses2ViewController;
+            
+            svc.type = self.type
+            svc.overallExpensesNumber = overallExpensesNumber
+            svc.propertyValueNumber = propertyValueNumber
+        }
+    }
+
 }

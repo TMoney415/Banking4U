@@ -11,21 +11,25 @@ import UIKit
 class OverallExpenses2ViewController: UIViewController {
     
     var type = ""
-    var propertyTax:String?
     var propertyValueNumber:Double?
+    var overallExpensesNumber:Double?
 
+    @IBOutlet var overallExpenseLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print(type)
-        print(propertyTax)
         print(propertyValueNumber)
+        calculations()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func calculations() {
+        overallExpenseLabel.text = "\(overallExpensesNumber!)"
+    }
 }
