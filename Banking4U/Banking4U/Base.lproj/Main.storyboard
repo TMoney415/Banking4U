@@ -147,6 +147,9 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8w-8B-7kc">
                                 <rect key="frame" x="0.0" y="335" width="600" height="216"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="140" y="235" width="320" height="216"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="zxn-sC-Pft" id="vFP-ea-ybI"/>
                                     <outlet property="delegate" destination="zxn-sC-Pft" id="aQp-na-Qcd"/>
@@ -171,6 +174,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="0.0" blue="0.11008059161256689" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="259" y="443" width="82" height="60"/>
+                                </variation>
                                 <connections>
                                     <segue destination="bV8-F9-h7X" kind="show" identifier="countyToHousePrice" id="Tcg-Qc-Aej"/>
                                 </connections>
@@ -262,24 +268,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="300" y="192" width="0.0" height="0.0"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-Te-R0u">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="217" y="271" width="167" height="36"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property tax in your County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-Pg-ipE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="118" y="75" width="362" height="36"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-0V-ojY">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.64490609219191919" blue="0.64490609219191919" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="334" width="560" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="propertyValueInput:" destination="bV8-F9-h7X" eventType="editingChanged" id="K6h-SG-bTu"/>
                                 </connections>
@@ -290,6 +308,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="0.0" blue="0.050213125069721976" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="259" y="453" width="82" height="60"/>
+                                </variation>
                                 <connections>
                                     <segue destination="PIS-KB-nQB" kind="show" identifier="housePriceToOverallExpenses" id="eq0-3b-8tf"/>
                                 </connections>
@@ -399,18 +420,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="176" y="207" width="248" height="36"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-A1-HBI">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="199" y="104" width="203" height="36"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-JW-Ac8">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.7131668244949495" blue="0.7131668244949495" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="140" width="560" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="foodExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="EEC-ej-GYk"/>
                                 </connections>
@@ -420,6 +450,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.69758128156565657" blue="0.68355933068167374" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="373" width="560" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="travelExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="3wC-pg-I9e"/>
                                 </connections>
@@ -429,6 +462,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.69406960227272729" blue="0.68011823899748192" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="252" width="560" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="clothingExpenseInput:" destination="PIS-KB-nQB" eventType="editingChanged" id="8oC-zQ-UA5"/>
                                 </connections>
@@ -438,6 +474,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="193" y="337" width="215" height="36"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-iD-cPn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -445,6 +484,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="0.030145655374867797" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="259" y="420" width="82" height="60"/>
+                                </variation>
                                 <connections>
                                     <segue destination="7dY-KZ-IWg" kind="show" identifier="overallExpensesToOverallExpenses2" id="ady-HI-W5P"/>
                                 </connections>
@@ -573,12 +615,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.13651583033977666" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="121" y="162" width="359" height="48"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-He-FrQ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0010991754808006684" green="0.55056423611111116" blue="0.071760165656598818" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="275" y="276" width="50" height="48"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -595,10 +643,10 @@
                                 <exclude reference="4Ke-He-FrQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="LIM-2K-ZiG"/>
-                                <exclude reference="bw7-g5-FUs"/>
                                 <exclude reference="B6u-h2-BSy"/>
                                 <exclude reference="ckI-9b-Kbh"/>
+                                <exclude reference="LIM-2K-ZiG"/>
+                                <exclude reference="bw7-g5-FUs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -608,10 +656,10 @@
                                 <include reference="4Ke-He-FrQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="LIM-2K-ZiG"/>
-                                <include reference="bw7-g5-FUs"/>
                                 <include reference="B6u-h2-BSy"/>
                                 <include reference="ckI-9b-Kbh"/>
+                                <include reference="LIM-2K-ZiG"/>
+                                <include reference="bw7-g5-FUs"/>
                             </mask>
                         </variation>
                     </view>

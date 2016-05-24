@@ -13,6 +13,7 @@ class HousePriceViewController: UIViewController {
     var propertyTax = ""
     var type = ""
     var propertyValueNumber = 0.0
+    
     @IBOutlet weak var propTaxLabel: UILabel!
     @IBOutlet weak var propertyTypeLabel: UILabel!
     @IBOutlet weak var propertyValueLabel: UITextField!
@@ -57,7 +58,6 @@ class HousePriceViewController: UIViewController {
         if (segue.identifier == "housePriceToOverallExpenses") {
             var svc = segue.destinationViewController as! OverallExpensesViewController;
             
-            svc.propertyTax = String(propertyTax)
             svc.type = self.type
             svc.propertyValueNumber = propertyValueNumber
         }

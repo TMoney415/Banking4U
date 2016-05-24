@@ -12,7 +12,6 @@ class OverallExpensesViewController: UIViewController {
     
     var type = ""
     var propertyValueNumber:Double?
-    var propertyTax:String?
     var foodExpenseInputNumber:Double?
     var clothingExpenseInputNumber:Double?
     var travelExpenseInputNumber:Double?
@@ -30,7 +29,6 @@ class OverallExpensesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         print(type)
-        print(propertyTax)
         print(propertyValueNumber)
     }
     override func didReceiveMemoryWarning() {
@@ -75,5 +73,4 @@ class OverallExpensesViewController: UIViewController {
             svc.propertyValueNumber = propertyValueNumber
         }
     }
-
 }
