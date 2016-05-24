@@ -70,7 +70,6 @@ class OverallExpensesViewController: UIViewController {
             
             svc.type = self.type
             svc.overallExpensesNumber = overallExpensesNumber
-            svc.propertyValueNumber = propertyValueNumber
         }
     }
 }
